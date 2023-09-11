@@ -38,10 +38,11 @@ header{
     height: 3rem;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 3px 10px 0 rgb(80,119,242,0.3);
+    box-shadow: 0 3px 10px 0 rgba(80,119,242,0.3);
     min-height: 55px;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 header .logo{
@@ -80,6 +81,7 @@ nav ul a{
 nav ul a:hover{
     color: #6CBB3C;
 }
+
 .mobile nav{
     position: fixed;
     display: flex;
@@ -96,6 +98,7 @@ nav ul a:hover{
     flex-direction: column;
     padding: 0.5em;
     padding: 2em;
+    transform: translateY(50px);
 }
 
 .mobile nav a{
@@ -178,8 +181,8 @@ button:hover{
 
 .heading_bottom{
     background-color: #9be070;
-    padding: 3px;
     overflow: hidden;
+    padding: 3px;
     width: 30px;
     border-radius: 5px;
     margin: auto;
@@ -199,7 +202,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     gap: 10px;
     padding-top: 2em;
@@ -233,7 +236,7 @@ button:hover{
 
 .skills_content .skills p{
     margin: 0;
-    background-color: #e5e6e7;
+    background: #e5e6e7;
     padding: 0.3em 1em;
     border-radius: 5px;
 }
@@ -281,7 +284,7 @@ button:hover{
 }
 
 .more_project_content .projectDesc p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: left;
     padding-bottom: 1em;
 }
@@ -346,9 +349,9 @@ footer{
     }
     .hero .socialMedia{
         display: flex;
+        flex-direction: column;
         position: fixed;
         left: 0;
-        flex-direction: column;
         gap: 0.5em;
         margin-top: 2em;
     }
